@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*Section for styling the body position on the page*/
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.inner-body {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Section for the header styling*/
+
+.heading-outer {
+    background-color: blue;
+    height: 10vh;
+    width: 100%;
+}
+
+.heading-inner {
+    background-color: yellow;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+/*Section for the index page styling*/
+
+/*Game rules section*/
+
+.rules-outer {
+    background-color: green;
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+}
+
+/*Game type section*/
+
+.type-outer {
+    background-color: indigo;
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+}
+
+.type-inner {
+    background-color: red;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
