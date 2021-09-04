@@ -65,3 +65,111 @@ body {
     height: 100%;
     margin: auto;
 }
+
+/*Section for the basic styling of the traditional and modern game type pages*/
+
+/*Game intro section*/
+
+.intro-outer {
+    background-color: orange;
+    height: 8vh;
+    width: 100%;
+}
+
+.intro-inner {
+    background-color: purple;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+
+
+/*The section for the player to pick their attack*/
+
+.game-outer {
+    background-color: green;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.game-inner {
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+/*The section to display the computers choice*/
+
+.computer-outer {
+    background-color: brown;
+    height: 8vh;
+    width: 100%;
+}
+
+.computer-inner {
+    background-color: grey;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+
+/*The section to display the countdown and current & high score*/
+
+.score-outer {
+    background-color: lightsalmon;
+    width: 100%;
+    height: 16vh;
+    margin: auto;
+}
+
+.score-inner {
+    background-color: darkolivegreen;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.countdown {
+    background-color: deeppink;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+}
+
+.score {
+    background: deepskyblue;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+
+.high {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background: white;
+}
+
+.current {
+    float: right;
+    height: 100%;
+    width: 50%;
+    background: black;
+}
+
+/*Footer section*/
+
+.footer-outer {
+    background-color: pink;
+    height: 8vh;
+    width: 100%;
+}
+
+.footer-inner {
+    background-color: darkred;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
