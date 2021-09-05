@@ -184,6 +184,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3vmax;
 }
 
+.game-inner li {
+    border: solid 2px black;
+    padding: 0 5px;
+}
+
     /*The section to display the computers choice*/
 
 .computer-outer {
