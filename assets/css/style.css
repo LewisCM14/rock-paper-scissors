@@ -63,6 +63,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
+.rules-inner {
+    background-color: white;
+    width:70%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.rules-inner span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /*Game type section*/
 
 .type-outer {
