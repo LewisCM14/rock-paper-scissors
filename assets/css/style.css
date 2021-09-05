@@ -183,6 +183,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
+.computer-inner p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+}
+
     /*The section to display the countdown and current + high score*/
 
 .score-outer {
