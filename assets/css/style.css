@@ -80,12 +80,17 @@ h1, h2, h3, h4, h5, h6 {
     width:50%;
     height: 100%;
     margin: auto;
+}
+
+.rules-inner ul {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    line-height: 200%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.6vmax;
+    justify-content: space-evenly;
+    font-size: 1.8vmax;
 }
 
     /*Targets the rules for the traditional game type only*/
