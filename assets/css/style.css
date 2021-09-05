@@ -1,3 +1,5 @@
+/*Link google fonts and remove default styling*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono:wght@700&display=swap');
 
 * {
@@ -8,7 +10,7 @@
     text-decoration: none;
 }
 
-/*Section for styling the body position on the page*/
+/*Section for styling the body and its position on the page*/
 
 body {
     background-color: white;
@@ -28,6 +30,7 @@ body {
 }
 
 /*Section for the header styling*/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Mono', monospace;
     color: #000000;
@@ -75,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     font-size: 1.5vw;
 }
+
+/*Targets the rules for the traditional game type only*/
 
 .rules-inner span {
     text-transform: uppercase;
@@ -146,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
-/*The section to display the countdown and current & high score*/
+/*The section to display the countdown and current + high score*/
 
 .score-outer {
     background-color: lightsalmon;
