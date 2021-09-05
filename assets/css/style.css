@@ -211,20 +211,28 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
     height: 70%;
     margin: auto;
+    text-align: center;
+    font-size: 1vmax;
+}
+
+.score div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .high {
     float: left;
     height: 100%;
     width: 50%;
-    background: white;
+    background: white;  
 }
 
 .current {
     float: right;
     height: 100%;
     width: 50%;
-    background: black;
+    background: teal;
 }
 
 /*Footer section*/
