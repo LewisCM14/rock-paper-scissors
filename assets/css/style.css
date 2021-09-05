@@ -102,6 +102,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
+.traditional {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background: red;
+}
+
+.modern {
+    float: right;
+    height: 100%;
+    width: 50%;
+    background: pink;
+}
+
 /*Section for the basic styling of the traditional and modern game type pages*/
 
 /*Game intro section*/
