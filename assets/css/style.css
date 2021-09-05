@@ -189,6 +189,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 5px;
 }
 
+.game-inner button {
+    text-decoration: inherit;
+    font-size: inherit;
+    background-color: inherit;
+}
+
     /*The section to display the computers choice*/
 
 .computer-outer {
