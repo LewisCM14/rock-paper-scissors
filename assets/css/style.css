@@ -114,6 +114,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 70%;
     height: 100%;
     margin: auto;
+    text-align: center;
+    font-size: 2vmax;
+}
+
+.type-inner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type-inner i {
+    font-size: 7vmax;
 }
 
 .traditional {
@@ -121,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     width: 50%;
     background: red;
+    text-transform: uppercase;
 }
 
 .modern {
