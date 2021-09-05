@@ -15,7 +15,7 @@
 body {
     background-color: white;
     max-height: 100vh;
-    max-width: 100%;
+    max-width: 100vw;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,10 +31,14 @@ body {
 
 /*Section for the header styling*/
 
+    /*Apply font & color to all heading types*/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Mono', monospace;
     color: #000000;
 }
+
+    /*Header style*/
 
 .heading-outer {
     background-color: blue;
@@ -46,13 +50,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: yellow;
     width: 70%;
     height: 100%;
-    margin: auto;
+    margin: auto;  
+}
+
+.heading-inner h1 {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    line-height: 200%;
+    line-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1vw;
+    font-size: 2.2vmax;
 }
 
 /*Section for the index page styling*/
