@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Section for the index page styling*/
 
-/*Game rules section*/
+    /*Game rules section*/
 
 .rules-outer {
     background-color: green;
@@ -79,14 +79,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5vw;
 }
 
-/*Targets the rules for the traditional game type only*/
+    /*Targets the rules for the traditional game type only*/
 
 .rules-inner span {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-/*Game type section*/
+    /*Game type section*/
 
 .type-outer {
     background-color: indigo;
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Section for the basic styling of the traditional and modern game type pages*/
 
-/*Game intro section*/
+    /*Game intro section*/
 
 .intro-outer {
     background-color: orange;
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*The section for the player to pick their attack*/
+    /*The section for the player to pick their attack*/
 
 .game-outer {
     background-color: green;
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
-/*The section to display the computers choice*/
+    /*The section to display the computers choice*/
 
 .computer-outer {
     background-color: brown;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
-/*The section to display the countdown and current + high score*/
+    /*The section to display the countdown and current + high score*/
 
 .score-outer {
     background-color: lightsalmon;
@@ -223,6 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     margin: auto;
 }
+    /*Styles the icons within the footer*/
 
 .footer-inner nav {
     width: 100%;
