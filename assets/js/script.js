@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function addClick() {
     rock.addEventListener("click", function(){
         compare("rock");
+        comChoice();
     })
     paper.addEventListener("click", function(){
         compare("paper");
@@ -49,6 +50,12 @@ function addClick() {
 
 function compare(playerChoice) {
     console.log("hello " + playerChoice);
+}
+
+function comChoice() {
+    let attacks = ["rock", "paper", "scissors", "lizard", "spock"]
+    let random = Math.floor(Math.random() * 5);
+    return attacks[random];    
 }
 
 /**
