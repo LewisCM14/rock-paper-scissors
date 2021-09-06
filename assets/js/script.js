@@ -74,7 +74,7 @@ function compare(playerChoice) {
         case "paperspock":
         case "spockrock":
         case "rockscissors":
-            console.log("win");
+            win();
             break;
         case "paperscissors":
         case "rockpaper":
@@ -86,16 +86,34 @@ function compare(playerChoice) {
         case "spockpaper":
         case "rockspock":
         case "scissorsrock":
-            console.log("lose");
+            lose();
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-            console.log("draw");
+            draw();
             break;
     }
+}
+
+    // The function for when the player wins
+
+function win(){
+    console.log("win");
+}
+
+    // The function for when the player loses
+
+function lose(){
+    console.log("lost");
+}
+
+    // The function for when the player draws
+
+function draw(){
+    console.log("draw");
 }
 
 /**
