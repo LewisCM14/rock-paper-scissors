@@ -10,7 +10,7 @@ function runGame() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons){
-        addEventListener("click", playerChoice)
+        addEventListener("click", playerChoice, comChoice)
     }
     
     console.log('DOM is ready');
@@ -23,11 +23,14 @@ function runGame() {
  * Displays result
  */
 
- function playerChoice(event){
+function playerChoice(event){
     let playerChoice = event.srcElement.id
     console.log(playerChoice);
 }
 
+function comChoice(event){
+
+}
 
 /**
  * Adds point to score if win
