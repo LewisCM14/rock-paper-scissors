@@ -108,22 +108,23 @@ function compare(playerChoice) {
 function win(comChoice){
     cs++;
     result.innerHTML = "Winner";
+    choice.innerHTML = comChoice;
     currentScore.innerHTML = cs;
-    choice.innerHTML = comChoice
+    finalscore();
 }
 
     // The function for when the player loses
 
 function lose(comChoice){
     result.innerHTML = "Loser";
-    choice.innerHTML = comChoice
+    choice.innerHTML = comChoice;
 }
 
     // The function for when the player draws
 
 function draw(comChoice){
     result.innerHTML = "Draw";
-    choice.innerHTML = comChoice
+    choice.innerHTML = comChoice;
 }
 
 /**
@@ -131,3 +132,13 @@ function draw(comChoice){
  * Comapres final score to high score, updates highscore if required
  */
 
+    // The function to update the highscore if current score is greater than it
+
+function finalscore(){
+    if (cs > hs){
+        hs++;
+    }
+
+    highScore.innerHTML = hs;
+
+}
