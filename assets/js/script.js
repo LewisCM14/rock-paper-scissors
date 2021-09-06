@@ -1,3 +1,16 @@
+// Decalre const variables for use later
+
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const lizard = document.getElementById("lizard");
+const spock = document.getElementById("spock");
+const choice = document.getElementById("choice");
+const result = document.getElementById("result");
+const timer = document.getElementById("timer");
+const currentScore = document.getElementById("current-score");
+const highScore = document.getElementById("high-score");
+
 /**
  * Wait for the dom to finish loading before running the game
  * Get the button elements and add event listeners to them
@@ -10,9 +23,8 @@ function runGame() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons){
-        addEventListener("click", playerChoice, comChoice)
+        addEventListener("click", playerChoice)
     }
-    
     console.log('DOM is ready');
  }
 
@@ -24,12 +36,8 @@ function runGame() {
  */
 
 function playerChoice(event){
-    let playerChoice = event.srcElement.id
+    playerChoice = event.srcElement.id;
     console.log(playerChoice);
-}
-
-function comChoice(event){
-
 }
 
 /**
