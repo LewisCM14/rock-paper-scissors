@@ -53,7 +53,7 @@ function addClick() {
  * The main game function
  * Makes computer pick a random attack
  * Compares playerChoice to comChoice 
- * Displays result
+ * Displays result, adds point to score if win
  */
 
     // The function to pick a random attack from the array on the computers behalf
@@ -127,7 +127,6 @@ function draw(comChoice){
 }
 
 /**
- * Adds point to score if win
  * Alerts when timer end
  * Comapres final score to high score, updates highscore if required
  */
