@@ -49,8 +49,39 @@ function addClick() {
 
 function compare(playerChoice) {
     let comChoice = getComChoice();
-    console.log("user = " + playerChoice);
-    console.log("comp = " + comChoice);
+    switch (playerChoice + comChoice) {
+        case "scissorspaper":
+        case "paperrock":
+        case "rocklizard":
+        case "lizardspock":
+        case "spockscissors":
+        case "scissorslizard":
+        case "lizardpaper":
+        case "paperspock":
+        case "spockrock":
+        case "rockscissors":
+            console.log("win");
+            break;
+        case "paperscissors":
+        case "rockpaper":
+        case "lizardrock":
+        case "spocklizard":
+        case "scissorsspock":
+        case "lizardscissors":
+        case "paperlizard":
+        case "spockpaper":
+        case "rockspock":
+        case "scissorsrock":
+            console.log("lose");
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+        case "lizardlizard":
+        case "spockspock":
+            console.log("draw");
+            break;
+    }
 }
 
 function getComChoice() {
