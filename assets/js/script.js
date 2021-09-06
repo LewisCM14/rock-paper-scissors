@@ -11,6 +11,11 @@ const timer = document.getElementById("timer");
 const currentScore = document.getElementById("current-score");
 const highScore = document.getElementById("high-score");
 
+// highscore and current score var, for use when incrementing
+
+var cs = 0
+var hs = 0
+
 /**
  * Wait for the dom to finish loading before running the game
  * Add event listeners to the attacks
@@ -74,7 +79,7 @@ function compare(playerChoice) {
         case "paperspock":
         case "spockrock":
         case "rockscissors":
-            win();
+            win(comChoice);
             break;
         case "paperscissors":
         case "rockpaper":
@@ -86,34 +91,39 @@ function compare(playerChoice) {
         case "spockpaper":
         case "rockspock":
         case "scissorsrock":
-            lose();
+            lose(comChoice);
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-            draw();
+            draw(comChoice);
             break;
     }
 }
 
     // The function for when the player wins
 
-function win(){
-    console.log("win");
+function win(comChoice){
+    cs++;
+    result.innerHTML = "Winner";
+    currentScore.innerHTML = cs;
+    choice.innerHTML = comChoice
 }
 
     // The function for when the player loses
 
-function lose(){
-    console.log("lost");
+function lose(comChoice){
+    result.innerHTML = "Loser";
+    choice.innerHTML = comChoice
 }
 
     // The function for when the player draws
 
-function draw(){
-    console.log("draw");
+function draw(comChoice){
+    result.innerHTML = "Draw";
+    choice.innerHTML = comChoice
 }
 
 /**
