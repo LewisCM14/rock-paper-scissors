@@ -13,14 +13,18 @@ const highScore = document.getElementById("high-score");
 
 /**
  * Wait for the dom to finish loading before running the game
- * Get the button elements and add event listeners to them
- * Start timer once a button has been clicked
+ * Add event listeners to the attacks
+ * Start timer once an attack has been clicked
  */
  
+    // Event listener for the dom to finish loading
+
 document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     addClick();
 })
+
+    // Function to add the click event listener to the attacks
 
 function addClick() {
     rock.addEventListener("click", function(){
@@ -46,6 +50,16 @@ function addClick() {
  * Compares playerChoice to comChoice 
  * Displays result
  */
+
+    // The function to pick a random attack from the array on the computers behalf
+
+function getComChoice() {
+    let attacks = ["rock", "paper", "scissors", "lizard", "spock"]
+    let random = Math.floor(Math.random() * 5);
+    return attacks[random];    
+}
+
+    // The function to compare the computers attack to the players attack, deciding the result
 
 function compare(playerChoice) {
     let comChoice = getComChoice();
@@ -82,12 +96,6 @@ function compare(playerChoice) {
             console.log("draw");
             break;
     }
-}
-
-function getComChoice() {
-    let attacks = ["rock", "paper", "scissors", "lizard", "spock"]
-    let random = Math.floor(Math.random() * 5);
-    return attacks[random];    
 }
 
 /**
