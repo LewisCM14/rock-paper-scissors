@@ -17,15 +17,27 @@ const highScore = document.getElementById("high-score");
  * Start timer once a button has been clicked
  */
  
-document.addEventListener("DOMContentLoaded", runGame);
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("dom has loaded");
+    addClick();
+})
 
-function runGame() {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons){
-        addEventListener("click", playerChoice)
-    }
-    console.log('DOM is ready');
+function addClick() {
+    rock.addEventListener("click", function(){
+        console.log("rock");
+    })
+    paper.addEventListener("click", function(){
+        console.log("paper");
+    })
+    scissors.addEventListener("click", function(){
+        console.log("scissors");
+    })
+    lizard.addEventListener("click", function(){
+        console.log("lizard");
+    })
+    spock.addEventListener("click", function(){
+        console.log("spock");
+    })
  }
 
 /**
@@ -34,11 +46,6 @@ function runGame() {
  * Compares playerChoice to comChoice 
  * Displays result
  */
-
-function playerChoice(event){
-    playerChoice = event.srcElement.id;
-    console.log(playerChoice);
-}
 
 /**
  * Adds point to score if win
