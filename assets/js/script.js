@@ -4,7 +4,17 @@
  * Start timer once a button has been clicked
  */
  
-document.addEventListener("DOMContentLoaded", function()
+document.addEventListener("DOMContentLoaded", runGame);
+
+function runGame() {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons){
+        addEventListener("click", playerChoice)
+    }
+    
+    console.log('DOM is ready');
+ }
 
 /**
  * The main game function
@@ -13,7 +23,11 @@ document.addEventListener("DOMContentLoaded", function()
  * Displays result
  */
 
-function compare()
+ function playerChoice(event){
+    let playerChoice = event.srcElement.id
+    console.log(playerChoice);
+}
+
 
 /**
  * Adds point to score if win
