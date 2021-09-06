@@ -1,7 +1,7 @@
 /**
  * Wait for the dom to finish loading before running the game
  * Get the button elements and add event listeners to them
- * Start countdown once a button has been clicked
+ * Start timer once a button has been clicked
  */
  
 document.addEventListener("DOMContentLoaded", function()
@@ -17,7 +17,7 @@ function compare()
 
 /**
  * Adds point to score if win
- * Alerts when countdown end
+ * Alerts when timer end
  * Comapres final score to high score, updates highscore if required
  */
 

@@ -34,9 +34,9 @@
             <div class="game-outer">
                 <div class="game-inner">
                     <ul>
-                        <li><button>Rock</button></li>
-                        <li><button>Paper</button></li>
-                        <li><button>Scissors</button></li>
+                        <li><button id="rock">Rock</button></li>
+                        <li><button id="paper">Paper</button></li>
+                        <li><button id="scissors">Scissors</button></li>
                     </ul>
                 </div>
             </div>
@@ -44,26 +44,24 @@
             <div class="computer-outer">
                 <div class="computer-inner">
                     <p>
-                        The Computer chose:<span>Choice</span>
+                        The Computer chose:<span id="choice"></span>
                     </p>
-                    <p>
-                        <span>Result</span>
-                    </p>
+                    <p id="result"></p>
                 </div>
             </div>
             <!--The container for countdown and the current/high score-->
             <div class="score-outer">
                 <div class="score-inner">
                     <div class="countdown">
-                        <h2>Countdown</h2>
+                        <h2 id="timer"></h2>
                     </div>
                     <div class="score">
-                        <div class="high">
-                            <p>Container for the score</p>
+                        <div class="current">
+                            <p id="current-score"></p>
                             <h3>Current Score</h3>
                         </div>
-                        <div class="current">
-                            <p>Container for the score</p>
+                        <div class="high">
+                            <p id="high-score"></p>
                             <h3>High Score</h3>
                         </div>
                     </div>
