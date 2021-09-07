@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     addClick();
     
-        if(attkArry > 3){
+        if(attkArry >= 3){
             highScore.innerHTML = hs;
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
