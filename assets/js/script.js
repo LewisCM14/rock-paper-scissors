@@ -1,4 +1,4 @@
-// Decalre const variables for use later
+// Decalre variables for use later
 
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
@@ -26,7 +26,7 @@ var hs = localStorage.getItem("hs", hs);
  * Start timer once an attack has been clicked
  */
  
-    // Event listener for the dom to finish loading
+    // Event listener for the dom to finish loading, sets the containers html content prior to game start
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
@@ -39,10 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
             result.innerHTML = "Result";
         }
 })
-
-    // Sets the containers html content prior to game start
-
-
 
     // Function to add the click event listener to the attacks
 

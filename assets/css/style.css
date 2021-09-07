@@ -292,16 +292,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .score p {
     font-size: 2.5vmax;
-}
-
-.score div {
+    height: 70%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .score h3 {
     color: black;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .high {
