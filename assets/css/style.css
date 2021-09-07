@@ -238,6 +238,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2vmax;
 }
 
+.computer-inner span {
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+#result {
+    text-transform: uppercase;
+}
+
     /*The section to display the countdown and current + high score*/
 
 .score-outer {
@@ -279,6 +288,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     text-align: center;
     font-size: 1vmax;
+}
+
+.score p {
+    font-size: 2.5vmax;
 }
 
 .score div {
