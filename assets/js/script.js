@@ -17,7 +17,7 @@ let attkArry = attacks.length;
 // highscore and current score var, for use when incrementing
 
 var cs = 0
-var hs = 0
+var hs = localStorage.getItem("hs", hs);
 
 /**
  * Wait for the dom to finish loading before running the game
@@ -173,6 +173,7 @@ function draw(comChoice){
 function finalscore(){
     if (cs > hs){
         hs++;
+        localStorage.setItem("hs", hs);
     }
 
     highScore.innerHTML = hs;
