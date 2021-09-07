@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-inner {
-    width: 85%;
+    width: 98%;
     height: 100%;
     margin: auto;
 }
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1vmax;
+    font-size: 2.5vmin;
 }
 
     /*The section for the player to pick their attack*/
@@ -353,6 +353,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 60%;
         height: 100%;
     }
+
+    .intro-inner p {
+        font-size: 1.6vmin;
+    }
 }
 
   /*1025px — 1200px: Desktops, large screens*/
@@ -362,6 +366,11 @@ h1, h2, h3, h4, h5, h6 {
         width: 75%;
         height: 100%;
     }
+
+    .intro-inner p {
+        font-size: 1.9vmin;
+    }
+    
 }
 
     /*769px — 1024px: Small screens, laptops*/
@@ -371,6 +380,11 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
         height: 100%;
     }
+
+    .intro-inner p {
+        font-size: 2vmin;
+    }
+    
 }
 
     /*481px — 768px: iPads, Tablets*/
@@ -380,6 +394,11 @@ h1, h2, h3, h4, h5, h6 {
         width: 90%;
         height: 100%;
     }
+
+    .intro-inner p {
+        font-size: 2.3vmin;
+    }
+    
 }
 
     /*320px — 480px: Mobile devices*/
@@ -389,4 +408,9 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         height: 100%;
     }
+
+    .intro-inner p {
+        font-size: 2.6vmin;
+    }
+    
 }
