@@ -19,6 +19,7 @@ var hs = 0
 /**
  * Wait for the dom to finish loading before running the game
  * Add event listeners to the attacks
+ * Sets the container content prior to game start
  * Start timer once an attack has been clicked
  */
  
@@ -28,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     addClick();
 })
+
+    // Sets the containers html content prior to game start
+
+highScore.innerHTML = hs;
+currentScore.innerHTML = cs;
+choice.innerHTML = "?";
+result.innerHTML = "Result";
 
     // Function to add the click event listener to the attacks
 
