@@ -12,6 +12,7 @@ let currentScore = document.getElementById("current-score");
 let highScore = document.getElementById("high-score");
 
 let attacks = document.getElementsByClassName("attack");
+let attkArry = attacks.length;
 
 // highscore and current score var, for use when incrementing
 
@@ -30,21 +31,24 @@ var hs = 0
 document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     addClick();
+    
+        if(attkArry > 3){
+            highScore.innerHTML = hs;
+            currentScore.innerHTML = cs;
+            choice.innerHTML = "?";
+            result.innerHTML = "Result";
+        }
 })
 
     // Sets the containers html content prior to game start
 
-highScore.innerHTML = hs;
-currentScore.innerHTML = cs;
-choice.innerHTML = "?";
-result.innerHTML = "Result";
+
 
     // Function to add the click event listener to the attacks
 
 function addClick() {
-    var x = attacks.length;
-
-        if (x <= 3){
+    
+        if (attkArry === 3) {
             rock.addEventListener("click", function(){
                 compare("rock");
             })
@@ -54,7 +58,7 @@ function addClick() {
             scissors.addEventListener("click", function(){
                 compare("scissors");
             })
-        } else {
+        } else if (attkArry === 5) {
             rock.addEventListener("click", function(){
                 compare("rock");
             })
@@ -70,7 +74,9 @@ function addClick() {
             spock.addEventListener("click", function(){
                 compare("spock");
             })
-        } 
+        } else {
+            console.log("index");
+        }
  }
 
 /**
@@ -84,9 +90,8 @@ function addClick() {
 
 function getComChoice() {
     let moves = ["rock", "paper", "scissors", "lizard", "spock"]
-    var x = attacks.length;
 
-        if (x <= 3){
+        if (attkArry === 3){
             let random = Math.floor(Math.random() * 3);
             return moves[random];
         } else {
