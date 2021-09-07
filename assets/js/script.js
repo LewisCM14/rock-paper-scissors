@@ -17,7 +17,8 @@ let attkArry = attacks.length;
 // highscore and current score var, for use when incrementing
 
 var cs = 0
-var hs = localStorage.getItem("hs", hs);
+var hstrad = localStorage.getItem("hstrad", hstrad);
+var hsmod = localStorage.getItem("hsmod", hsmod);
 
 /**
  * Wait for the dom to finish loading before running the game
@@ -32,11 +33,16 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     addClick();
     
-        if(attkArry >= 3){
-            highScore.innerHTML = hs;
+        if(attkArry === 3){
+            highScore.innerHTML = hstrad;
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
             result.innerHTML = "Result";
+        } else if (attkArry === 5){
+            highScore.innerHTML = hsmod;
+            currentScore.innerHTML = cs;
+            choice.innerHTML = "?";
+            result.innerHTML = "Result"; 
         }
 })
 
@@ -142,7 +148,12 @@ function win(comChoice){
     result.innerHTML = "Winner";
     choice.innerHTML = comChoice;
     currentScore.innerHTML = cs;
-    finalscore();
+    
+    if(attkArry === 3){
+        finalScoreTrad();
+    } else if (attkArry === 5){
+        finalScoreMod();
+    }  
 }
 
     // The function for when the player loses
@@ -166,12 +177,22 @@ function draw(comChoice){
 
     // The function to update the highscore if current score is greater than it
 
-function finalscore(){
-    if (cs > hs){
-        hs++;
-        localStorage.setItem("hs", hs);
+function finalScoreTrad(){
+    if (cs > hstrad){
+        hstrad++;
+        localStorage.setItem("hstrad", hstrad);
     }
 
-    highScore.innerHTML = hs;
+    highScore.innerHTML = hstrad;
+
+}
+
+function finalScoreMod(){
+    if (cs > hsmod){
+        hsmod++;
+        localStorage.setItem("hsmod", hsmod);
+    }
+
+    highScore.innerHTML = hsmod;
 
 }
