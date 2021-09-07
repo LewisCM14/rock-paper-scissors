@@ -1,15 +1,17 @@
 // Decalre const variables for use later
 
-const rock = document.getElementById("rock");
-const paper = document.getElementById("paper");
-const scissors = document.getElementById("scissors");
-const lizard = document.getElementById("lizard");
-const spock = document.getElementById("spock");
-const choice = document.getElementById("choice");
-const result = document.getElementById("result");
-const timer = document.getElementById("timer");
-const currentScore = document.getElementById("current-score");
-const highScore = document.getElementById("high-score");
+let rock = document.getElementById("rock");
+let paper = document.getElementById("paper");
+let scissors = document.getElementById("scissors");
+let lizard = document.getElementById("lizard");
+let spock = document.getElementById("spock");
+let choice = document.getElementById("choice");
+let result = document.getElementById("result");
+let timer = document.getElementById("timer");
+let currentScore = document.getElementById("current-score");
+let highScore = document.getElementById("high-score");
+
+let attacks = document.getElementsByClassName("attack");
 
 // highscore and current score var, for use when incrementing
 
@@ -40,21 +42,35 @@ result.innerHTML = "Result";
     // Function to add the click event listener to the attacks
 
 function addClick() {
-    rock.addEventListener("click", function(){
-        compare("rock");
-    })
-    paper.addEventListener("click", function(){
-        compare("paper");
-    })
-    scissors.addEventListener("click", function(){
-        compare("scissors");
-    })
-    lizard.addEventListener("click", function(){
-        compare("lizard");
-    })
-    spock.addEventListener("click", function(){
-        compare("spock");
-    })
+    var x = attacks.length;
+
+        if (x <= 3){
+            rock.addEventListener("click", function(){
+                compare("rock");
+            })
+            paper.addEventListener("click", function(){
+                compare("paper");
+            })
+            scissors.addEventListener("click", function(){
+                compare("scissors");
+            })
+        } else {
+            rock.addEventListener("click", function(){
+                compare("rock");
+            })
+            paper.addEventListener("click", function(){
+                compare("paper");
+            })
+            scissors.addEventListener("click", function(){
+                compare("scissors");
+            })
+            lizard.addEventListener("click", function(){
+                compare("lizard");
+            })
+            spock.addEventListener("click", function(){
+                compare("spock");
+            })
+        } 
  }
 
 /**
@@ -67,9 +83,16 @@ function addClick() {
     // The function to pick a random attack from the array on the computers behalf
 
 function getComChoice() {
-    let attacks = ["rock", "paper", "scissors", "lizard", "spock"]
-    let random = Math.floor(Math.random() * 5);
-    return attacks[random];    
+    let moves = ["rock", "paper", "scissors", "lizard", "spock"]
+    var x = attacks.length;
+
+        if (x <= 3){
+            let random = Math.floor(Math.random() * 3);
+            return moves[random];
+        } else {
+            let random = Math.floor(Math.random() * 5);
+            return moves[random];
+        } 
 }
 
     // The function to compare the computers attack to the players attack, deciding the result
