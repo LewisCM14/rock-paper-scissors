@@ -337,6 +337,10 @@ body {
     color: #f9ebff;
 }
 
+.footer-inner i:hover {
+    color: #66baa8;
+}
+
 /*Media Queries*/
 
   /*1201px and more —  Extra large screens, TV*/
