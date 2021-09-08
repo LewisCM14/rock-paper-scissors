@@ -145,6 +145,10 @@ body {
     color: #f9ebff;
 }
 
+.type-inner a:hover {
+    color: #66baa8;
+}
+
 /*Section for the basic styling of the traditional and modern game type pages*/
 
     /*Game intro section*/
