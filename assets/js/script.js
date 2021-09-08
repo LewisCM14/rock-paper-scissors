@@ -254,14 +254,14 @@ function gameStart() {
 }
 
 function gameOver() {
-    timer.innerHTML = "Game Over"
     alert(`Game Over, Your final score was ${cs}`);
-    
+   
     cs = 0;
     timerCount = 10;
     
     currentScore.innerHTML = cs;
     choice.innerHTML = "?";
     result.innerHTML = "Result";
-    timer.innerHTML = "00:10"; 
+    timer.innerHTML = "00:10";
+
 }
