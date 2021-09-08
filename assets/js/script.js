@@ -1,6 +1,6 @@
- /**
-  * Decalre variables 
-  */   
+/**
+* Decalre variables 
+*/   
     
     // Variables used in picking attack type
 
@@ -13,37 +13,17 @@ let spock = document.getElementById("spock");
 let choice = document.getElementById("choice");
 let result = document.getElementById("result");
 
- // Variables used for countdown
+    // Variables used for countdown
  
 let timer = document.getElementById("timer");
- 
-var timerCount = 5;
-
-let countDown = setInterval (()=>{
-    timerCount--;
-    displayTime(timerCount);
-    if(timerCount <= 0 || timerCount < 1){
-        gameOver();
-        clearInterval(countDown);
-    }
-},1000)
-
-function  displayTime (second){
-    let min = Math.floor(second / 60);
-    let sec = Math.floor(second % 60);
-    timer.innerHTML = `${min<10 ? "0":""}${min}:${sec<10 ? "0":""}${sec}`
-}
-
-function gameOver(){
-    timer.innerHTML = "Game Over"
-}
+var timerCount = 30;
 
     // Creates array from attack styles for use identifying the game type
 
 let attacks = document.getElementsByClassName("attack");
 let attkArry = attacks.length;
 
-// highscore and current score variables, seperates traditional and modern game type hs
+    // highscore and current score variables, seperates traditional and modern game type hs
 
 var cs = 0
 
@@ -52,7 +32,6 @@ var hsmod = localStorage.getItem("hsmod", hsmod);
 
 let currentScore = document.getElementById("current-score");
 let highScore = document.getElementById("high-score");
-
 
 /**
  * Wait for the dom to finish loading before running the game
@@ -72,11 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
             result.innerHTML = "Result";
+            timer.innerHTML = "00:30"; 
         } else if (attkArry === 5){
             highScore.innerHTML = hsmod;
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
-            result.innerHTML = "Result"; 
+            result.innerHTML = "Result";
+            timer.innerHTML = "00:30"; 
         }
 })
 
@@ -87,28 +68,52 @@ function addClick() {
         if (attkArry === 3) {
             rock.addEventListener("click", function(){
                 compare("rock");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             paper.addEventListener("click", function(){
                 compare("paper");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
         } else if (attkArry === 5) {
             rock.addEventListener("click", function(){
                 compare("rock");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             paper.addEventListener("click", function(){
                 compare("paper");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             lizard.addEventListener("click", function(){
                 compare("lizard");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
             spock.addEventListener("click", function(){
                 compare("spock");
+                if (timerCount === 30){
+                    gameStart();
+                }
             })
         } else {
             console.log("index");
@@ -205,7 +210,7 @@ function draw(comChoice){
 }
 
 /**
- * Alerts when timer end
+ * Contains the timer function, used to identify game end and start
  * Comapres final score to high score, updates highscore if required
  */
 
@@ -229,4 +234,27 @@ function finalScoreMod(){
 
     highScore.innerHTML = hsmod;
 
+}
+
+    // The timer function, signals game start and end
+
+function  displayTime(second) {
+    let min = Math.floor(second / 60);
+    let sec = Math.floor(second % 60);
+    timer.innerHTML = `${min<10 ? "0":""}${min}:${sec<10 ? "0":""}${sec}`
+}
+
+function gameStart() {
+    let countDown = setInterval (()=>{
+        timerCount--;
+        displayTime(timerCount);
+        if(timerCount <= 0 || timerCount < 1){
+            gameOver();
+            clearInterval(countDown);
+        }
+    },1000)
+}
+
+function gameOver() {
+    timer.innerHTML = "Game Over"
 }
