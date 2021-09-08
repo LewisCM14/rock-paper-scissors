@@ -59,6 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 2.2vmax;
+    text-shadow: 5px 5px #493a68;
 }
 
 .heading-inner a {
