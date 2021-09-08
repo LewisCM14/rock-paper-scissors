@@ -20,6 +20,12 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+.body-outer {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #02035e, #1f1161, #301f63, #3d2c66, #493a68);
+}
+
 .inner-body {
     width: 50%;
     height: 100%;
