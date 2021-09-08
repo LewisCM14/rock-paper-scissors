@@ -81,6 +81,9 @@ body {
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.8vmax;
+    box-sizing: border-box;
+    border: 2px solid #f9ebff;
+    border-radius: 10px;
 }
 
     /*Targets the rules for the traditional game type only*/
@@ -96,11 +99,14 @@ body {
     width: 100%;
     height: 20vh;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .type-inner {
     width: 70%;
-    height: 100%;
+    height: 90%;
     margin: auto;
     text-align: center;
     font-size: 2vmax;
