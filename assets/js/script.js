@@ -1,24 +1,38 @@
-// Decalre variables for use later
+ /**
+  * Decalre variables 
+  */   
+    
+    // Variables used in picking attack type
 
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
+
 let choice = document.getElementById("choice");
 let result = document.getElementById("result");
+
+ // Variables used for countdown
+
 let timer = document.getElementById("timer");
-let currentScore = document.getElementById("current-score");
-let highScore = document.getElementById("high-score");
+var timerCount = 30;
+
+    // Creates array from attack styles for use identifying the game type
 
 let attacks = document.getElementsByClassName("attack");
 let attkArry = attacks.length;
 
-// highscore and current score var, for use when incrementing
+// highscore and current score variables, seperates traditional and modern game type hs
 
 var cs = 0
-var hstrad = localStorage.getItem("hstrad", hstrad);
-var hsmod = localStorage.getItem("hsmod", hsmod);
+
+let hstrad = localStorage.getItem("hstrad", hstrad);
+let hsmod = localStorage.getItem("hsmod", hsmod);
+
+let currentScore = document.getElementById("current-score");
+let highScore = document.getElementById("high-score");
+
 
 /**
  * Wait for the dom to finish loading before running the game
