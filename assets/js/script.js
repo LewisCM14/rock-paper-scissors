@@ -14,11 +14,29 @@ let choice = document.getElementById("choice");
 let result = document.getElementById("result");
 
  // Variables used for countdown
-
+ 
 let timer = document.getElementById("timer");
-var timerCount = 30;
+ 
+var timerCount = 5;
 
-timer.innerHTML = `00:${timerCount}`;
+let countDown = setInterval (()=>{
+    timerCount--;
+    displayTime(timerCount);
+    if(timerCount <= 0 || timerCount < 1){
+        gameOver();
+        clearInterval(countDown);
+    }
+},1000)
+
+function  displayTime (second){
+    let min = Math.floor(second / 60);
+    let sec = Math.floor(second % 60);
+    timer.innerHTML = `${min<10 ? "0":""}${min}:${sec<10 ? "0":""}${sec}`
+}
+
+function gameOver(){
+    timer.innerHTML = "Game Over"
+}
 
     // Creates array from attack styles for use identifying the game type
 
