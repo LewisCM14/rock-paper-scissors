@@ -18,6 +18,8 @@ let result = document.getElementById("result");
 let timer = document.getElementById("timer");
 var timerCount = 30;
 
+timer.innerHTML = `00:${timerCount}`;
+
     // Creates array from attack styles for use identifying the game type
 
 let attacks = document.getElementsByClassName("attack");
@@ -27,8 +29,8 @@ let attkArry = attacks.length;
 
 var cs = 0
 
-let hstrad = localStorage.getItem("hstrad", hstrad);
-let hsmod = localStorage.getItem("hsmod", hsmod);
+var hstrad = localStorage.getItem("hstrad", hstrad);
+var hsmod = localStorage.getItem("hsmod", hsmod);
 
 let currentScore = document.getElementById("current-score");
 let highScore = document.getElementById("high-score");
@@ -40,7 +42,7 @@ let highScore = document.getElementById("high-score");
  * Sets the container content prior to game start
  * Start timer once an attack has been clicked
  */
- 
+
     // Event listener for the dom to finish loading, sets the containers html content prior to game start
 
 document.addEventListener("DOMContentLoaded", function() {
