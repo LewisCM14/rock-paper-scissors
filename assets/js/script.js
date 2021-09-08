@@ -25,7 +25,7 @@ let attkArry = attacks.length;
 
     // highscore and current score variables, seperates traditional and modern game type hs
 
-var cs = 0
+var cs = 0;
 
 var hstrad = localStorage.getItem("hstrad", hstrad);
 var hsmod = localStorage.getItem("hsmod", hsmod);
@@ -256,4 +256,12 @@ function gameStart() {
 function gameOver() {
     timer.innerHTML = "Game Over"
     alert(`Game Over, Your final score was ${cs}`);
+    
+    cs = 0;
+    timerCount = 10;
+    
+    currentScore.innerHTML = cs;
+    choice.innerHTML = "?";
+    result.innerHTML = "Result";
+    timer.innerHTML = "00:10"; 
 }
