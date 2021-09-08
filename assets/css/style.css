@@ -96,7 +96,7 @@ body {
 
 .rules-inner span {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
     /*Game type section*/
@@ -200,6 +200,10 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 7vmax;
+}
+
+.attack i:hover {
+    color: #66baa8;
 }
 
     /*The section to display the computers choice*/
