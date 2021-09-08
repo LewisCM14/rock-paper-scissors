@@ -183,31 +183,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .game-inner {
-    width: 50%;
+    width:95%;
     height: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.game-inner ul {
+.attack {
     width: 100%;
     height: 100%;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    font-size: 3vmax;
-}
-
-.game-inner li {
-    border: solid 2px black;
-    padding: 0 5px;
-}
-
-.game-inner button {
-    text-decoration: inherit;
-    font-size: inherit;
-    background-color: inherit;
 }
 
     /*The section to display the computers choice*/
