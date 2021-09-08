@@ -184,6 +184,8 @@ function compare(playerChoice) {
 function win(comChoice){
     cs++;
     result.innerHTML = "Winner";
+    result.classList.add("green-glow");
+    setTimeout(function(){result.classList.remove("green-glow")}, 300);
     choice.innerHTML = comChoice;
     currentScore.innerHTML = cs;
     
@@ -198,6 +200,8 @@ function win(comChoice){
 
 function lose(comChoice){
     result.innerHTML = "Loser";
+    result.classList.add("red-glow");
+    setTimeout(function(){result.classList.remove("red-glow")}, 300);
     choice.innerHTML = comChoice;
 }
 
@@ -205,6 +209,8 @@ function lose(comChoice){
 
 function draw(comChoice){
     result.innerHTML = "Draw";
+    result.classList.add("grey-glow");
+    setTimeout(function(){result.classList.remove("grey-glow")}, 300);
     choice.innerHTML = comChoice;
 }
 

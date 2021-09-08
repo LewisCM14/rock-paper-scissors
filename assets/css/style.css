@@ -350,6 +350,25 @@ body {
     color: #66baa8;
 }
 
+/*Javascript classes*/
+
+    /*Win*/
+
+.green-glow{
+    text-shadow: 2px 2px 10px green;
+}
+    /*Lose*/
+
+.red-glow{
+    text-shadow: 2px 2px 10px red;
+}
+
+    /*Draw*/
+
+.grey-glow {
+    text-shadow: 2px 2px 10px gray;
+}
+
 /*Media Queries*/
 
   /*1201px and more —  Extra large screens, TV*/
