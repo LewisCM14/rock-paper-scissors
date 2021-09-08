@@ -17,6 +17,7 @@ let result = document.getElementById("result");
  
 let timer = document.getElementById("timer");
 var timerCount = 10;
+var on = false; // Used to prevent the timer function from firing repeatedly inbetween games 
 
     // Creates array from attack styles for use identifying the game type
 
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else if (attkArry === 5){
         highScore.innerHTML = hsmod;
     }
-    
+
     addClick();   
 })
 
@@ -120,7 +121,8 @@ function getComChoice() {
 
 function compare(playerChoice) {
     
-    if (timerCount === 10){
+    if (on === false){
+        on = true;
         gameStart();
     }
 
@@ -229,14 +231,17 @@ function  displayTime(second) {
 }
 
 function gameStart() {
-    let countDown = setInterval (()=>{
-        timerCount--;
-        displayTime(timerCount);
-        if(timerCount <= 0 || timerCount < 1){
-            gameOver();
-            clearInterval(countDown);
-        }
-    },1000)
+    if(timerCount === 10){
+        let countDown = setInterval (()=>{
+            timerCount--;
+            displayTime(timerCount);
+            if(timerCount <= 0 || timerCount < 1){    
+                    on = false;
+                    gameOver();
+                    clearInterval(countDown);
+            }
+        },1000)
+    }
 }
 
 function gameOver() {
@@ -249,4 +254,6 @@ function gameOver() {
     choice.innerHTML = "?";
     result.innerHTML = "Result";
     timer.innerHTML = "Try Again!";
+
+    on = false;
 }
