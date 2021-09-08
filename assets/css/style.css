@@ -358,9 +358,17 @@ body {
         width: 60%;
         height: 100%;
     }
-
     .intro-inner p {
         font-size: 1.6vmin;
+    }
+    .heading-inner h1 {
+        font-size: 3.1vmin;
+    }
+    .rules-inner {
+        width:75%;
+    }
+    .rules-inner ul {
+        font-size: 2.8vmin;
     }
 }
 
@@ -371,11 +379,18 @@ body {
         width: 75%;
         height: 100%;
     }
-
     .intro-inner p {
         font-size: 1.9vmin;
     }
-    
+    .heading-inner h1 {
+        font-size: 3.5vmin;
+    }
+    .rules-inner {
+        width:75%;
+    }
+    .rules-inner ul {
+        font-size: 3vmin;
+    }
 }
 
     /*769px — 1024px: Small screens, laptops*/
@@ -385,11 +400,18 @@ body {
         width: 80%;
         height: 100%;
     }
-
     .intro-inner p {
         font-size: 2vmin;
     }
-    
+    .heading-inner h1 {
+        font-size: 4vmin;
+    }
+    .rules-inner {
+        width:95%;
+    }
+    .rules-inner ul {
+        font-size: 3vmin;
+    }
 }
 
     /*481px — 768px: iPads, Tablets*/
@@ -399,11 +421,18 @@ body {
         width: 90%;
         height: 100%;
     }
-
     .intro-inner p {
         font-size: 2.3vmin;
     }
-    
+    .heading-inner h1 {
+        font-size: 4.5vmin;
+    }
+    .rules-inner {
+        width:85%;
+    }
+    .rules-inner ul {
+        font-size: 4vmin;
+    }
 }
 
     /*320px — 480px: Mobile devices*/
@@ -413,9 +442,16 @@ body {
         width: 100%;
         height: 100%;
     }
-
     .intro-inner p {
         font-size: 2.6vmin;
     }
-    
+    .heading-inner h1 {
+        font-size: 5vmin;
+    }
+    .rules-inner {
+        width:90%;
+    }
+    .rules-inner ul {
+        font-size: 4vmin;
+    }   
 }
