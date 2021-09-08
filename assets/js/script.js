@@ -44,13 +44,14 @@ let highScore = document.getElementById("high-score");
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
-    addClick();
-
+    
     currentScore.innerHTML = cs;
     choice.innerHTML = "?";
     result.innerHTML = "Result";
     timer.innerHTML = "00:10"; 
     
+    addClick();
+
         if(attkArry === 3){
             highScore.innerHTML = hstrad;
             
@@ -258,7 +259,7 @@ function gameOver() {
    
     cs = 0;
     timerCount = 10;
-    
+
     currentScore.innerHTML = cs;
     choice.innerHTML = "?";
     result.innerHTML = "Result";
