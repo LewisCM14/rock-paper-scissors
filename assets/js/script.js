@@ -16,7 +16,7 @@ let result = document.getElementById("result");
     // Variables used for countdown
  
 let timer = document.getElementById("timer");
-var timerCount = 30;
+var timerCount = 10;
 
     // Creates array from attack styles for use identifying the game type
 
@@ -51,13 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
             result.innerHTML = "Result";
-            timer.innerHTML = "00:30"; 
+            timer.innerHTML = "00:10"; 
         } else if (attkArry === 5){
             highScore.innerHTML = hsmod;
             currentScore.innerHTML = cs;
             choice.innerHTML = "?";
             result.innerHTML = "Result";
-            timer.innerHTML = "00:30"; 
+            timer.innerHTML = "00:10"; 
         }
 })
 
@@ -68,50 +68,50 @@ function addClick() {
         if (attkArry === 3) {
             rock.addEventListener("click", function(){
                 compare("rock");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             paper.addEventListener("click", function(){
                 compare("paper");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
         } else if (attkArry === 5) {
             rock.addEventListener("click", function(){
                 compare("rock");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             paper.addEventListener("click", function(){
                 compare("paper");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             lizard.addEventListener("click", function(){
                 compare("lizard");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
             spock.addEventListener("click", function(){
                 compare("spock");
-                if (timerCount === 30){
+                if (timerCount === 10){
                     gameStart();
                 }
             })
@@ -257,4 +257,5 @@ function gameStart() {
 
 function gameOver() {
     timer.innerHTML = "Game Over"
+    alert(`Game Over, Your final score was ${cs}`);
 }
