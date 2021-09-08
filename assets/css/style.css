@@ -13,7 +13,6 @@
 /*Section for styling the body and its position on the page*/
 
 body {
-    background-color: #FDF7FF;
     color: black;
     max-height: 100vh;
     max-width: 100vw;
@@ -198,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 7vmax;
 }
 
     /*The section to display the computers choice*/
