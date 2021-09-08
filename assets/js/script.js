@@ -50,69 +50,45 @@ document.addEventListener("DOMContentLoaded", function() {
     result.innerHTML = "Result";
     timer.innerHTML = "00:10"; 
     
-    addClick();
-
-        if(attkArry === 3){
-            highScore.innerHTML = hstrad;
-            
-        } else if (attkArry === 5){
-            highScore.innerHTML = hsmod;
-        }
+    if(attkArry === 3){
+        highScore.innerHTML = hstrad;
+        
+    } else if (attkArry === 5){
+        highScore.innerHTML = hsmod;
+    }
+    
+    addClick();   
 })
 
     // Function to add the click event listener to the attacks
 
 function addClick() {
-    
+
         if (attkArry === 3) {
             rock.addEventListener("click", function(){
-                compare("rock");
-                if (timerCount === 10){
-                    gameStart();
-                }
+                compare("rock");   
             })
             paper.addEventListener("click", function(){
-                compare("paper");
-                if (timerCount === 10){
-                    gameStart();
-                }
+                compare("paper"); 
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
-                if (timerCount === 10){
-                    gameStart();
-                }
             })
         } else if (attkArry === 5) {
             rock.addEventListener("click", function(){
                 compare("rock");
-                if (timerCount === 10){
-                    gameStart();
-                }
             })
             paper.addEventListener("click", function(){
                 compare("paper");
-                if (timerCount === 10){
-                    gameStart();
-                }
             })
             scissors.addEventListener("click", function(){
                 compare("scissors");
-                if (timerCount === 10){
-                    gameStart();
-                }
             })
             lizard.addEventListener("click", function(){
                 compare("lizard");
-                if (timerCount === 10){
-                    gameStart();
-                }
             })
             spock.addEventListener("click", function(){
-                compare("spock");
-                if (timerCount === 10){
-                    gameStart();
-                }
+                compare("spock"); 
             })
         } else {
             console.log("index");
@@ -143,6 +119,11 @@ function getComChoice() {
     // The function to compare the computers attack to the players attack, deciding the result
 
 function compare(playerChoice) {
+    
+    if (timerCount === 10){
+        gameStart();
+    }
+
     let comChoice = getComChoice();
     switch (playerChoice + comChoice) {
         case "scissorspaper":
@@ -228,7 +209,6 @@ function finalScoreTrad(){
     }
 
     highScore.innerHTML = hstrad;
-
 }
 
 function finalScoreMod(){
@@ -238,7 +218,6 @@ function finalScoreMod(){
     }
 
     highScore.innerHTML = hsmod;
-
 }
 
     // The timer function, signals game start and end
@@ -269,6 +248,5 @@ function gameOver() {
     currentScore.innerHTML = cs;
     choice.innerHTML = "?";
     result.innerHTML = "Result";
-    timer.innerHTML = "00:10";
-
+    timer.innerHTML = "Try Again!";
 }
