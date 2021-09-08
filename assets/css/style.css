@@ -61,6 +61,10 @@ body {
     font-size: 2.2vmax;
 }
 
+.heading-inner a {
+    color: inherit;
+}
+
 /*Section for the index page styling*/
 
     /*Game rules section*/
