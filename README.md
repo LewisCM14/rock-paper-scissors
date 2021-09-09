@@ -156,6 +156,10 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 ## Unfixed Bugs
 
+- Firefox had a slight discrepancy in the landing page view height. Causing it to have a scroll bar which I didn’t intend. I deemed this not to currently be a major issue though. 
+
+- The issues preventing me from scoring a 100% for web applications on Lighthouse. Lack of knowlage is the root cause of this.
+
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -164,7 +168,7 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - 
+The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.github.io/rock-paper-scissors/index.html)
 
 ## Technologies Used
 
