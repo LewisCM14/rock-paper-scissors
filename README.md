@@ -128,12 +128,31 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 * Competitive play against another user rather than AI.
 
 ## Testing  
-## Validator Testing 
 
-- HTML
-    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+- I have  run my website on: Chrome, Microsoft Edge, Firefox and Safari. Performing as intended on all of them.  
+
+- It has also been run on my own personal computer, laptop and iPhone X, running as intended on these also.   
+
+- To broaden my device spectrum, chrome developer tools was used to mimic the site running on several other devices, no issues have yet been found. 
+
+- **Validator Testing**
+
+    - HTML
+        - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+    - CSS
+        - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+    - JS
+        - No errors were found when passing through the [JS Quality tool](https://jshint.com/)
+
+- **Lighthouse**
+
+![the computer choice image](/assets/images/lighthouse.png)
+
+- When passed through the google chrome lighthouse extension for mobile devices a 100% was achieved. 
+
+![the computer choice image](/assets/images/lighthouse.web.png)
+
+- When passed through the google chrome lighthouse extension for web applications it scored 100% on everything but performance, I am currently unaware on how to fix the problems highlighted in this test. 
 
 ## Unfixed Bugs
 
