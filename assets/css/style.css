@@ -40,29 +40,30 @@ body {
     /*Header style*/
 
 .heading-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 10vh;
     width: 100%;
 }
 
 .heading-inner {
     width: 70%;
-    height: 100%;
+    height: 85%;
     margin: auto;  
 }
 
 .heading-inner h1 {
-    width: 100%;
-    height: 100%;
     text-align: center;
     line-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 2.2vmax;
-    text-shadow: 5px 5px #493a68;
+    text-shadow: 5px 5px 2px #493a68;
 }
 
 .heading-inner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: inherit;
 }
 
@@ -77,6 +78,9 @@ body {
 }
 
 .rules-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:50%;
     height: 100%;
     margin: auto;
@@ -85,16 +89,21 @@ body {
 
 .rules-inner ul {
     width: 100%;
-    height: 100%;
+    height: 98%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
     box-sizing: border-box;
     border: 2px solid #f9ebff;
     border-radius: 10px;
+}
+
+.rules-inner h2 {
+    text-decoration: underline;
+    font-size: 1.7vmax;
 }
 
     /*Targets the rules for the traditional game type only*/
