@@ -1,107 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A game of rock, paper, scissors, lizard, Spock hosted in the browser, played vs the computer, with an aim to set a highscore within 30 seconds">
-    <meta name="keywords" content="rock, paper, scissors, lizard, Spock, game, rules, countdown, score, vs computer">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A game of rock, paper, scissors, lizard, Spock hosted in the browser, played vs the computer, with an aim to set a highscore within 30 seconds">
+        <meta name="keywords" content="rock, paper, scissors, lizard, Spock, game, rules, countdown, score, vs computer">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <title>Rock, Paper, Scissors</title>
-</head>
-<body>
-    <div class="body-outer">
-        <div class="inner-body">
-            <!--Heading container-->
-            <header class="heading-outer">
-                <div class="heading-inner">
-                    <a href="index.html" aria-label="directs you to the homepage">
-                        <h1>ROCK, PAPER, SCISSORS,<br>Lizard, Spock!<br></h1>
-                    </a>  
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <div class="body-outer">
+            <div class="inner-body">
+                <!--Heading container-->
+                <header class="heading-outer">
+                    <div class="heading-inner">
+                        <a href="index.html" aria-label="directs you to the homepage">
+                            <h1>ROCK, PAPER, SCISSORS,<br>Lizard, Spock!<br></h1>
+                        </a>  
+                    </div>
+                </header>
+                <!--Game intro container-->
+                <div class="intro-outer">
+                    <div class="intro-inner">
+                        <p>
+                            How many times can you beat the computer before the countdown ends?
+                            <br>
+                            Begin the game by choosing one of the attacks below!
+                        </p>
+                    </div>
                 </div>
-            </header>
-            <!--Game intro container-->
-            <div class="intro-outer">
-                <div class="intro-inner">
-                    <p>
-                        How many times can you beat the computer before the countdown ends?
-                        <br>
-                        Begin the game by choosing one of the attacks below!
-                    </p>
+                <!--The container for the player choice-->
+                <div class="game-outer">
+                    <div class="game-inner">
+                        <div class="attack">
+                            <div id="rock">
+                                <i class="far fa-hand-rock"></i>
+                            </div>
+                        </div>
+                        <div class="attack">
+                            <div id="paper">
+                                <i class="far fa-hand-paper"></i>
+                            </div>
+                        </div>
+                        <div class="attack">
+                            <div id="scissors">
+                                <i class="far fa-hand-scissors"></i>
+                            </div>
+                        </div>
+                        <div class="attack">
+                            <div id="lizard">
+                                <i class="far fa-hand-lizard"></i>
+                            </div>
+                        </div>
+                        <div class="attack">
+                            <div id="spock">
+                                <i class="far fa-hand-spock"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--The container to display the computers choice-->
+                <div class="computer-outer">
+                    <div class="computer-inner">
+                        <p>
+                            The Computer chose:<span id="choice"></span>
+                        </p>
+                        <p id="result"></p>
+                    </div>
+                </div>
+                <!--The container for countdown and the current/high score-->
+                <div class="score-outer">
+                    <div class="score-inner">
+                        <div class="countdown">
+                            <p id="timer"></p>
+                        </div>
+                        <div class="score">
+                            <div class="current">
+                                <p id="current-score"></p>
+                                <h3>Current Score</h3>
+                            </div>
+                            <div class="high">
+                                <p id="high-score"></p>
+                                <h3>High Score</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--The container for the footer-->
+                <footer class="footer-outer">
+                    <div class="footer-inner">
+                        <nav>
+                            <a href="traditional.html" aria-label="directs you to the traditional game type"><i class="fas fa-dice-three"></i></a>
+                            <a href="index.html" aria-label="directs you to the homepage"><i class="fas fa-home"></i></a>
+                            <a href="modern.html" aria-label="directs you to the modern game type"><i class="fas fa-dice-five"></i></a>
+                        </nav>    
+                    </div>
+                </footer>
+                <!--Font Awsome & Javascript-->
+                <script src="https://kit.fontawesome.com/fbcb9c2e0c.js" crossorigin="anonymous"></script>
+                <script src="assets/js/script.js"></script>
             </div>
-            <!--The container for the player choice-->
-            <div class="game-outer">
-                <div class="game-inner">
-                    <div class="attack">
-                        <div id="rock">
-                            <i class="far fa-hand-rock"></i>
-                        </div>
-                    </div>
-                    <div class="attack">
-                        <div id="paper">
-                            <i class="far fa-hand-paper"></i>
-                        </div>
-                    </div>
-                    <div class="attack">
-                        <div id="scissors">
-                            <i class="far fa-hand-scissors"></i>
-                        </div>
-                    </div>
-                    <div class="attack">
-                        <div id="lizard">
-                            <i class="far fa-hand-lizard"></i>
-                        </div>
-                    </div>
-                    <div class="attack">
-                        <div id="spock">
-                            <i class="far fa-hand-spock"></i>
-                        </div>
-                </div>
-            </div>
-            <!--The container to display the computers choice-->
-            <div class="computer-outer">
-                <div class="computer-inner">
-                    <p>
-                        The Computer chose:<span id="choice"></span>
-                    </p>
-                    <p id="result"></p>
-                </div>
-            </div>
-            <!--The container for countdown and the current/high score-->
-            <div class="score-outer">
-                <div class="score-inner">
-                    <div class="countdown">
-                        <p id="timer"></p>
-                    </div>
-                    <div class="score">
-                        <div class="current">
-                            <p id="current-score"></p>
-                            <h3>Current Score</h3>
-                        </div>
-                        <div class="high">
-                            <p id="high-score"></p>
-                            <h3>High Score</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--The container for the footer-->
-            <footer class="footer-outer">
-                <div class="footer-inner">
-                    <nav>
-                        <a href="traditional.html" aria-label="directs you to the traditional game type"><i class="fas fa-dice-three"></i></a>
-                        <a href="index.html" aria-label="directs you to the homepage"><i class="fas fa-home"></i></a>
-                        <a href="modern.html" aria-label="directs you to the modern game type"><i class="fas fa-dice-five"></i></a>
-                    </nav>    
-                </div>
-            </footer>
         </div>
-        <!--Font Awsome & Javascript-->
-        <script src="https://kit.fontawesome.com/fbcb9c2e0c.js" crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
-    </div>
-</body>
+    </body>
 </html>
