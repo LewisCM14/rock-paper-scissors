@@ -1,5 +1,11 @@
 # Rock, Paper, Scissors, Lizard, Spock!
 
+Rock, Paper, Scissors, Lizard, Spock! Is an interactive game hosted in the web browser, making use of several technologies to create a positive experience for the user.  
+
+Its primary goal is to provide enjoyment whilst also highlighting, a perhaps little known, modern adaptation of a classic game. It creates a competitive element through use of a time limit to the game and a high score stored in the local storage of the browser. 
+
+![readme hero image](/assets/images/hero.png)
+
 ## User Experience (UX)
 
 - **User Stories**
