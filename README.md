@@ -176,6 +176,7 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 
     * HTML5
     * CSS3
+    * JS
 
 - **Frameworks, Libraries & Programs Used**
 
@@ -186,7 +187,7 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
             * Used to define my  colour pallet for the project based of my primary colour choice.
 
     3. Google Fonts. 
-            * Used to import the Comfortaa and Varela+Round font into the style.css file which is used on all pages throughout the project.
+            * Used to import the Space Mono and Poppins font into the style.css file which is used on all pages throughout the project.
 
     4. Font Awesome.
             * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
@@ -204,11 +205,20 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 
 * A special thank you to my mentor Can Sucullu. 
 
-* Thanks to my peers on Slack who responded to my questions.  
+* Thanks to Scott from the Code Institude tutor support team, who helped me develop my understanding of JS throughout this project.
+
+* Finally thanks to my peers on Slack who responded to my questions.  
 
 - **Content** 
 
-    * I used the breakpoints listed on https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/ for me media queries
+    * I used the breakpoints listed on [FreeCodeCamp](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/) for my media queries.
+
+    * I used this tutorial on [Local Storage](https://www.youtube.com/watch?v=T9GWHFDcELQ&ab_channel=ZacGordon) to aid in writing the code for my high score functions. 
+
+    * I used this tutorial on [writing a timer](https://www.youtube.com/watch?v=_a4XCarxwr8&ab_channel=WEBCIFAR) to help in developing my countdown functions.
+
+    *  I used this [tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1730s&ab_channel=freeCodeCamp.org) for help in developing the main game functions and glow classes on my results container.    
 
 - **Media**
 
+    * No media has been used on this project.
