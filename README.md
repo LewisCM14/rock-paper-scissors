@@ -175,7 +175,7 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
         * Balsamiq was used to create the wireframes during the design process.
 
     2. [MyColor.Space](https://mycolor.space/).
-        * Used to define my colour pallet for the project based of my primary colour choice.
+        * Used to define my colour pallet for the project based of my primary colour choice. Also used to create the background gradient of site.
 
     3. [Google Fonts](https://fonts.google.com/). 
         * Used to import the Space Mono and Poppins font into the style.css file which is used on all pages throughout the project.
