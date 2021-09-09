@@ -2,21 +2,20 @@
 
 Rock, Paper, Scissors, Lizard, Spock! Is an interactive game hosted in the web browser, making use of several technologies to create a positive experience for the user.  
 
-Its primary goal is to provide enjoyment whilst also highlighting, a perhaps little known, modern adaptation of a classic game. It creates a competitive element through use of a time limit to the game and a high score stored in the local storage of the browser. 
+Its primary goal is to provide enjoyment whilst also highlighting, a perhaps little known, modern adaptation of a classic game. It creates a competitive element through the use of a time limit to the game play and a high score stored in the local storage of the browser. 
 
 ![readme hero image](/assets/images/hero.png)
-
 ## User Experience (UX)
 
 - **User Stories**
 
-    *The site works off the assumption, the user is already aware of the classic game, Rock, Paper, Scissors.*
+    *The site works off the assumption the user is already aware of the classic game: Rock, Paper, Scissors.*
 
     + **First Time Visitor Goals**
     
         A. Remind the user of the rules for the classic game type. 
 
-        B. Demonstrate how to the two moves of the modern game type have been incorporated.
+        B. Demonstrate how to the two new moves of the modern game type have been incorporated.
 
         C. Be encouraged to set a high score.   
 
@@ -40,19 +39,12 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 - **Research**
 
-    + **Pros**
-  
-
-    + **Cons**
-
-
-    - **Features**
-
+    *The main purpose of research on this project was to see how previous creators laid out their site. However, I was unable to find a site that incorporated all the features I intended.*
 ## Design
 
 - **Colour Scheme**
 
-    *Inspiration for the colour scheme came from Spock's uniform in Star Trek. A limited colour pallet based off this was developed with https://mycolor.space/ Designated colours are as follows:*
+    *Inspiration for the colour scheme came from Spock's uniform in Star Trek. A limited colour pallet based off this was developed with [MyColor.Space](https://mycolor.space/) designated colours are as follows:*
 
     1. #02035E (Dark Blue)
     2. #493A68 (Dark Purple)
@@ -84,7 +76,7 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 - **The Rules Section**
 
-    * The intention with the rules section is to be clear and concise. The rules for the traditional game type are uppercase and the modern are lowercase, as is done in the header. 
+    * The intention with the rules section is to be clear and concise. The rules for the Traditional game type are uppercase and the Modern are lowercase, as is done in the header. 
 
     * They are wrapped in a simple border to help frame them on the page, attempting to make them appear like a notice board. 
 
@@ -92,7 +84,7 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
     * As is with the header and rules sections, the text for the Traditional game type in the buttons to direct you is uppercase and the Modern game type is lowercase. 
 
-    * Dice icons are used to highlight the amount of moves in the respective game types. 
+    * Dice icons are used to highlight the amount of moves types in the respective game types. 
 
 **The Game Areas**
 
@@ -110,7 +102,7 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 * The computer choice is updated as moves are called, highlighting to the user the choice is random. 
 
-* The result area has a glow class applied to it; this allows the user to identify their result without having to read the result each time. Green for a win, red for a loss and grey for a draw. 
+* The result area has a glow class applied to it; this allows the user to identify their result without having to fully read the result each time. Green for a win, red for a loss and grey for a draw. 
 
 ![the game moves image](/assets/images/moves.png)
 
@@ -126,7 +118,6 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 * Multiple time variations for the countdown. 
 
 * Competitive play against another user rather than AI.
-
 ## Testing  
 
 - I have  run my website on: Chrome, Microsoft Edge, Firefox and Safari. Performing as intended on all of them.  
@@ -139,8 +130,10 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
     - HTML
         - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+
     - CSS
         - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+
     - JS
         - No errors were found when passing through the [JS Quality tool](https://jshint.com/)
 
@@ -159,17 +152,15 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 - Firefox had a slight discrepancy in the landing page view height. Causing it to have a scroll bar which I didn’t intend. I deemed this not to currently be a major issue though. 
 
 - The issues preventing me from scoring a 100% for web applications on Lighthouse. Lack of knowlage is the root cause of this.
-
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  1. In the GitHub repository, navigate to the Settings tab. 
+  2. Navigate to the GitHub pages area and follow the link.
+  3. Publish the site from the main branch in the root directory. Once complete a link to the site will be displayed. Indicating successful deployment. 
 
 The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.github.io/rock-paper-scissors/index.html)
-
 ## Technologies Used
 
 - **Languages Used**
@@ -181,26 +172,25 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 - **Frameworks, Libraries & Programs Used**
 
     1. Balsamiq. 
-            * Balsamiq was used to create the wireframes during the design process.
+        * Balsamiq was used to create the wireframes during the design process.
 
     2. mycolour.space.
-            * Used to define my  colour pallet for the project based of my primary colour choice.
+        * Used to define my colour pallet for the project based of my primary colour choice.
 
     3. Google Fonts. 
-            * Used to import the Space Mono and Poppins font into the style.css file which is used on all pages throughout the project.
+        * Used to import the Space Mono and Poppins font into the style.css file which is used on all pages throughout the project.
 
     4. Font Awesome.
-            * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+        * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
     5. Git.
-            * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+        * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
      6. GitHub.
-            * GitHub is used to store the projects code after being pushed from Git.
+        * GitHub is used to store the projects code after being pushed from Git.
 
     7. Am i Responsive
-            * Used to create hero image for readme.
-
+        * Used to create the hero image for readme.
 ## Credits 
 
 * A special thank you to my mentor Can Sucullu. 
@@ -210,6 +200,8 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 * Finally thanks to my peers on Slack who responded to my questions.  
 
 - **Content** 
+
+    * I used the [blog post](https://blog.hubspot.com/website/center-div-css) here to help develop my knowledge of centring objects with CSS. 
 
     * I used the breakpoints listed on [FreeCodeCamp](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/) for my media queries.
 
