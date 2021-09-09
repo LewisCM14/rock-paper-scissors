@@ -74,18 +74,51 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
     *The site consists of a landing page, used to display the rules and two separate pages used to hold the two individual game types. This multipage approach allowed me to achieve all the owner goals.*
    ## Existing Features
 
-**Header Bar**
+![image of the index page](/assets/images/index.png)
 
-**The Index Page**
+- **The Header**
+
+    * As is industry standard the page header, which is consistent throughout the site, acts as a link to the home page. 
+
+    * The Rock, Paper and Scissors parts of it are uppercase, whilst the Lizard and Spock part are not. This is done so the user can differentiate between the rules for the Traditional game type and the Modern game type as wrote below it. 
 
 - **The Rules Section**
 
- - **The Type Section** 
+    * The intention with the rules section is to be clear and concise. The rules for the traditional game type are uppercase and the modern are lowercase, as is done in the header. 
 
+    * They are wrapped in a simple border to help frame them on the page, attempting to make them appear like a notice board. 
 
-**Traditional Page**
+- **The Type Section** 
 
-**Modern Page**
+    * As is with the header and rules sections, the text for the Traditional game type in the buttons to direct you is uppercase and the Modern game type is lowercase. 
+
+    * Dice icons are used to highlight the amount of moves in the respective game types. 
+
+**The Game Areas**
+
+![the game image](/assets/images/gamearea.png)
+
+* The score and countdown displays are intended to mimic a basketball scoreboard, both incrementing as intended, whilst the user plays. The high score is stored within the browser's local storage to allow for repeated gaming. 
+
+* The timer begins once the first move is called, upon its completion an alert is displayed with the final score and a “Try Again!” message is displayed within the countdown container. This is intended to encourage the user to keep playing. 
+
+* The footer allows the user to easily navigate between the two game types or to the home page to be reminded of the rules. The dice icons are used again to allow for intuitive use of the site. A hover pseudo class is used on the icons so to show the user they are links.
+
+* The game area also contains a prompt at the top to inform the user that the aim of the game is to set a high score within the time frame and the countdown begins once they chose their first move. 
+
+![the computer choice image](/assets/images/comchoice.png)
+
+* The computer choice is updated as moves are called, highlighting to the user the choice is random. 
+
+* The result area has a glow class applied to it; this allows the user to identify their result without having to read the result each time. Green for a win, red for a loss and grey for a draw. 
+
+![the game moves image](/assets/images/moves.png)
+
+* The move icons are designed to be the focus point of the game areas. Big and bold in the page centre. 
+
+![the hover pseudo class image](/assets/images/hoverpsudo.png)
+
+* A hover pseudo class is applied to the game moves so the user can see which move they are about to pick with ease. 
 ## Features Left to Implement
 
 ## Testing  
