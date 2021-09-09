@@ -174,23 +174,26 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
     1. Balsamiq. 
         * Balsamiq was used to create the wireframes during the design process.
 
-    2. mycolour.space.
+    2. [MyColor.Space](https://mycolor.space/).
         * Used to define my colour pallet for the project based of my primary colour choice.
 
-    3. Google Fonts. 
+    3. [Google Fonts](https://fonts.google.com/). 
         * Used to import the Space Mono and Poppins font into the style.css file which is used on all pages throughout the project.
 
-    4. Font Awesome.
+    4. [Font Awesome](https://fontawesome.com/).
         * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
     5. Git.
         * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-     6. GitHub.
+     6. [GitHub](https://github.com/).
         * GitHub is used to store the projects code after being pushed from Git.
 
-    7. Am i Responsive
+    7. [Am i Responsive](http://ami.responsivedesign.is/).
         * Used to create the hero image for readme.
+
+    8. [Iconifier](https://iconifier.net/).
+        * Used to create the favicon for the site.
 ## Credits 
 
 * A special thank you to my mentor Can Sucullu. 
@@ -209,8 +212,10 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 
     * I used this tutorial on [writing a timer](https://www.youtube.com/watch?v=_a4XCarxwr8&ab_channel=WEBCIFAR) to help in developing my countdown functions.
 
-    *  I used this [tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1730s&ab_channel=freeCodeCamp.org) for help in developing the main game functions and glow classes on my results container.    
+    *  I used this [tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1730s&ab_channel=freeCodeCamp.org) for help in developing the main game functions and glow classes on my results container.
+
+    *  I used the [blog post](https://www.lcn.com/blog/beginners-guide-favicons/) here to help me add a favicon to my site.    
 
 - **Media**
 
-    * No media has been used on this project.
+    * [seekpng](https://www.seekpng.com/) was used to source the image used in the favicon.
