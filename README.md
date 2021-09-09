@@ -10,17 +10,33 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 - **User Stories**
 
+    *The site works off the assumption, the user is already aware of the classic game, Rock, Paper, Scissors.*
+
     + **First Time Visitor Goals**
     
+        A. Remind the user of the rules for the classic game type. 
+
+        B. Demonstrate how to the two moves of the modern game type have been incorporated.
+
+        C. Be encouraged to set a high score.   
 
     + **Returning Visitor Goals**
 
+        A. Further enforce the rules for the modern game type. 
+
+        B. Beat the previous high score. 
 
     + **Frequent Visitor Goals**
 
+        A. Be fluent in their understanding of the game. 
+
+        B. Continue to set a new high score. 
 
     - **Owners Story**
 
+        A. The Primary goal of the owner is to educate the user on the modern game type.
+
+        B. To encourage the user to keep returning and set a high score. 
 
 - **Research**
 
