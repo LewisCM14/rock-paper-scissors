@@ -84,7 +84,7 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
     * As is with the header and rules sections, the text for the Traditional game type in the buttons to direct you is uppercase and the Modern game type is lowercase. 
 
-    * Dice icons are used to highlight the amount of moves types in the respective game types. 
+    * Dice icons are used to highlight the amount of move types in the respective game types. 
 
 **The Game Areas**
 
