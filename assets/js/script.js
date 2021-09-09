@@ -46,16 +46,18 @@ let highScore = document.getElementById("high-score");
 document.addEventListener("DOMContentLoaded", function() {
     console.log("dom has loaded");
     
-    currentScore.innerHTML = cs;
-    choice.innerHTML = "?";
-    result.innerHTML = "Result";
-    timer.innerHTML = "00:10"; 
-    
     if(attkArry === 3){
         highScore.innerHTML = hstrad;
-        
+        currentScore.innerHTML = cs;
+        choice.innerHTML = "?";
+        result.innerHTML = "Result";
+        timer.innerHTML = "00:10";      
     } else if (attkArry === 5){
         highScore.innerHTML = hsmod;
+        currentScore.innerHTML = cs;
+        choice.innerHTML = "?";
+        result.innerHTML = "Result";
+        timer.innerHTML = "00:10";      
     }
 
     addClick();   
