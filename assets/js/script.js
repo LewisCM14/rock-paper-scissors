@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     addClick();   
-})
+});
 
     // Function to add the click event listener to the attacks
 
@@ -68,29 +68,29 @@ function addClick() {
         if (attkArry === 3) {
             rock.addEventListener("click", function(){
                 compare("rock");   
-            })
+            });
             paper.addEventListener("click", function(){
                 compare("paper"); 
-            })
+            });
             scissors.addEventListener("click", function(){
                 compare("scissors");
-            })
+            });
         } else if (attkArry === 5) {
             rock.addEventListener("click", function(){
                 compare("rock");
-            })
+            });
             paper.addEventListener("click", function(){
                 compare("paper");
-            })
+            });
             scissors.addEventListener("click", function(){
                 compare("scissors");
-            })
+            });
             lizard.addEventListener("click", function(){
                 compare("lizard");
-            })
+            });
             spock.addEventListener("click", function(){
                 compare("spock"); 
-            })
+            });
         } else {
             console.log("index");
         }
@@ -106,7 +106,7 @@ function addClick() {
     // The function to pick a random attack from the array on the computers behalf
 
 function getComChoice() {
-    let moves = ["rock", "paper", "scissors", "lizard", "spock"]
+    let moves = ["rock", "paper", "scissors", "lizard", "spock"];
 
         if (attkArry === 3){
             let random = Math.floor(Math.random() * 3);
@@ -168,7 +168,7 @@ function win(comChoice){
     cs++;
     result.innerHTML = "Winner";
     result.classList.add("green-glow");
-    setTimeout(function(){result.classList.remove("green-glow")}, 300);
+    setTimeout(function(){result.classList.remove("green-glow");}, 300);
     choice.innerHTML = comChoice;
     currentScore.innerHTML = cs;
     
@@ -184,7 +184,7 @@ function win(comChoice){
 function lose(comChoice){
     result.innerHTML = "Loser";
     result.classList.add("red-glow");
-    setTimeout(function(){result.classList.remove("red-glow")}, 300);
+    setTimeout(function(){result.classList.remove("red-glow");}, 300);
     choice.innerHTML = comChoice;
 }
 
@@ -193,7 +193,7 @@ function lose(comChoice){
 function draw(comChoice){
     result.innerHTML = "Draw";
     result.classList.add("grey-glow");
-    setTimeout(function(){result.classList.remove("grey-glow")}, 300);
+    setTimeout(function(){result.classList.remove("grey-glow");}, 300);
     choice.innerHTML = comChoice;
 }
 
@@ -227,7 +227,7 @@ function finalScoreMod(){
 function  displayTime(second) {
     let min = Math.floor(second / 60);
     let sec = Math.floor(second % 60);
-    timer.innerHTML = `${min<10 ? "0":""}${min}:${sec<10 ? "0":""}${sec}`
+    timer.innerHTML = `${min<10 ? "0":""}${min}:${sec<10 ? "0":""}${sec}`;
 }
 
 function gameStart() {
@@ -240,7 +240,7 @@ function gameStart() {
                     gameOver();
                     clearInterval(countDown);
             }
-        },1000)
+        },1000);
     }
 }
 
