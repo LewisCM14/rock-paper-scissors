@@ -121,6 +121,12 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 * A hover pseudo class is applied to the game moves so the user can see which move they are about to pick with ease. 
 ## Features Left to Implement
 
+* A congratulatory message if a new high score is set. 
+
+* Multiple time variations for the countdown. 
+
+* Competitive play against another user rather than AI.
+
 ## Testing  
 ## Validator Testing 
 
