@@ -52,11 +52,26 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 - **Colour Scheme**
 
+    *Inspiration for the colour scheme came from Spock's uniform in Star Trek. A limited colour pallet based off this was developed with https://mycolor.space/ Designated colours are as follows:*
+
+    1. #02035E (Dark Blue)
+    2. #493A68 (Dark Purple)
+    3. #F9EBFF (Off-White)
+    4. #66BAA8 (Teal)
+
+![color palette image](/assets/images/palette.png)
+
 - **Typography**
+
+    *I chose **Space Mono** for most of the text and **Poppins** as a secondary font. Space Mono is a font used in Star Trek and has a strong sci-fi appearance, I felt this was emotive of the sites purpose and when coupled with Poppins provided good contrast for the sections of text.*
 
 - **Imagery**
 
+    *There is no imagery in the sense of pictures used in the site, I chose to do this so not to distract from the icons used as the buttons for the game, allowing the user to focus fully when making their decision during game play.* 
+
 - **Layout**
+
+    *The site consists of a landing page, used to display the rules and two separate pages used to hold the two individual game types. This multipage approach allowed me to achieve all the owner goals.*
    ## Existing Features
 
 **Header Bar**
