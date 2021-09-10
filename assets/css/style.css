@@ -395,6 +395,7 @@ body {
 /*Game End Modal*/
 
 .endgame-outer {
+    visibility: hidden;
     background-color: #f9ebff;
     width: 20vw;
     height: 15vh;

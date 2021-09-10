@@ -26,7 +26,7 @@ var on = false; // Used to prevent the timer function from firing repeatedly inb
 let attacks = document.getElementsByClassName("attack");
 let attkArry = attacks.length;
 
-// highscore and current score variables, seperates traditional and modern game type hs
+// Highscore and current score variables, seperates traditional and modern game type hs
 
 var cs = 0;
 
@@ -35,6 +35,10 @@ var hsmod = localStorage.getItem("hsmod", hsmod);
 
 let currentScore = document.getElementById("current-score");
 let highScore = document.getElementById("high-score");
+
+// Variables used for endgame modal box
+
+let show = document.getElementsByClassName("endgame-outer");
 
 /**
  * Wait for the dom to finish loading before running the game
@@ -246,23 +250,31 @@ function gameStart() {
 			displayTime(timerCount);
 			if (timerCount <= 0 || timerCount < 1) {
 				on = false;
-				gameOver();
 				clearInterval(countDown);
+				endGame();
 			}
 		}, 1000);
+		if (timerCount <= 0 || timerCount < 1) {
+			clearInterval(countDown);
+		}
 	}
 }
 
-function gameOver() {
-	alert(`Game Over, Your final score was ${cs}`);
+function endGame() {
+	show[0].style.visibility = "visible";
+	let reset = document.getElementById("reset");
+	let score = document.getElementById("score");
+	score.innerHTML = cs;
 
-	cs = 0;
-	timerCount = 10;
+	reset.addEventListener("click", function() {
+		cs = 0;
+		timerCount = 10;
 
-	currentScore.innerHTML = cs;
-	choice.innerHTML = "?";
-	result.innerHTML = "Result";
-	timer.innerHTML = "Try Again!";
+		currentScore.innerHTML = cs;
+		choice.innerHTML = "?";
+		result.innerHTML = "Result";
 
-	on = false;
+		on = false;
+		show[0].style.visibility = "hidden";
+	});
 }
