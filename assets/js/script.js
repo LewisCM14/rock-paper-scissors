@@ -46,7 +46,6 @@ let highScore = document.getElementById("high-score");
     // Event listener for the dom to finish loading, sets the containers html content prior to game start
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("dom has loaded");
     
     if(attkArry === 3){
         highScore.innerHTML = hstrad;
@@ -96,7 +95,7 @@ function addClick() {
                 compare("spock"); 
             });
         } else {
-            console.log("index");
+            
         }
  }
 
