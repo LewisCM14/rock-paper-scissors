@@ -416,6 +416,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 2vmin;
 }
 
@@ -425,21 +426,26 @@ body {
     color: #493a68;
 }
 
+.button-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;  
+}
+
 .endgame-inner button {
     color: #f9ebff;
     background-color: #66baa8;
-    font-size: inherit;
-    width: 45%;
-    height: 25%;
+    font-size: 0.9vmax;
     margin: auto;
     box-sizing: border-box;
     border-radius: 10px;
     font-family: inherit;
     text-transform: uppercase;
+    padding: 5px;
 }
 
 .endgame-inner button:hover {
-    text-decoration: underline;
+    background-color: #02035e;
 }
 
 /*Media Queries*/
@@ -493,6 +499,9 @@ body {
     }
     .rules-inner h2 {
         font-size: 3vmin;
+    }
+    .endgame-inner button {
+        font-size: 1.5vmin;
     }
 }
 
@@ -555,6 +564,9 @@ body {
     .endgame-inner {
         font-size: 2.5vmin;
     }
+    .endgame-inner button {
+        font-size: 2vmin;
+    }
 }
 
 /*320px — 480px: Mobile devices*/
@@ -575,5 +587,9 @@ body {
     }
     .rules-inner ul {
         font-size: 4vmin;
+    }
+    .endgame-inner button {
+        padding: 2px;
+        font-size: 2vmin;
     }
 }
