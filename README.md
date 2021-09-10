@@ -143,15 +143,14 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 - When passed through the google chrome lighthouse extension for mobile devices a 100% was achieved. 
 
-![the computer choice image](/assets/images/lighthouse.web.png)
-
-- When passed through the google chrome lighthouse extension for web applications it scored 100% on everything but performance, I am currently unaware on how to fix the problems highlighted in this test. 
-
+- When passed through the google chrome lighthouse extension for web applications it also scored 100%.
 ## Unfixed Bugs
 
 - Firefox had a slight discrepancy in the landing page view height. Causing it to have a scroll bar which I didn’t intend. I deemed this not to currently be a major issue though. 
 
-- The issues preventing me from scoring a 100% for web applications on Lighthouse. Lack of knowlage is the root cause of this.
+- When running lighthouse occasionally 99% will be achieved on performance, however when the test is ran again 100% on everything is achieved. This is for both web and mobile applications. I am currently unsure what causes this.
+
+![the computer choice image](/assets/images/lighthouse.web.png)
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
