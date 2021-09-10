@@ -193,6 +193,9 @@ The live link can be found here - [Rock, Paper, Scissors](https://lewiscm14.gith
 
     8. [Iconifier](https://iconifier.net/).
         * Used to create the favicon for the site.
+    
+    9. [Beautify](https://codebeautify.org/).
+        * Used to beautify my: HTML, CSS and JS code.
 ## Credits 
 
 * A special thank you to my mentor Can Sucullu. 
