@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Function to add the click event listener to the attacks
+// The below code is developed from an outside source, please refer to readme
 
 function addClick() {
 
@@ -111,6 +112,7 @@ function addClick() {
  */
 
 // The function to pick a random attack from the array on the computers behalf
+// The below code is developed from an outside source, please refer to readme
 
 function getComChoice() {
 	let moves = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -125,6 +127,7 @@ function getComChoice() {
 }
 
 // The function to compare the computers attack to the players attack, deciding the result
+// The below code is developed from an outside source, please refer to readme
 
 function compare(playerChoice) {
 
@@ -170,6 +173,7 @@ function compare(playerChoice) {
 }
 
 // The function for when the player wins
+// The 'glow' for the below functions is based off an outside source, please refer to readme
 
 function win(comChoice) {
 	cs++;
@@ -216,6 +220,7 @@ function draw(comChoice) {
  */
 
 // The function to update the highscore if current score is greater than it
+// The code for storing the highscore's is developed from an outside source, please refer to readme
 
 function finalScoreTrad() {
 	if (cs > hstrad) {
@@ -235,7 +240,8 @@ function finalScoreMod() {
 	highScore.innerHTML = hsmod;
 }
 
-// The timer function, signals game start and end
+// The timer function, signals game start and end 
+// The code for the timer function is based off an outside source, please refer to readme
 
 function displayTime(second) {
 	let min = Math.floor(second / 60);
