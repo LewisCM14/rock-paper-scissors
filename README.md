@@ -98,6 +98,12 @@ Its primary goal is to provide enjoyment whilst also highlighting, a perhaps lit
 
 * The game area also contains a prompt at the top to inform the user that the aim of the game is to set a high score within the time frame and the countdown begins once they chose their first move. 
 
+![an image of the modal box](/assets/images/modal.png)
+
+* Once the game ends a modal box appears, informing the user of their final score. Upon clicking the “Play Again” button, the modal box closes and the game resets. 
+
+* A hover class is applied to the button so the user is aware its clickable. 
+
 ![the computer choice image](/assets/images/comchoice.png)
 
 * The computer choice is updated as moves are called, highlighting to the user the choice is random. 
